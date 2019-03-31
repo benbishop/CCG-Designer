@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCG", "CCG\CCG.csproj", "{B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCG.Core", "CCG.Core\CCG.Core.csproj", "{33fd4669-2ba4-4ca8-b6c3-f6250fd49ff3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCG.Core", "CCG.Core\CCG.Core.csproj", "{1ad920b6-ed43-49f5-86ca-28caca28023f}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AnyCPU = Debug|AnyCPU
