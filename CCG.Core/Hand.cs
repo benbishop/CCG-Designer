@@ -11,16 +11,17 @@ namespace CCG.Core
         
         protected readonly List<Card> Cards = new List<Card>();
         
-        public void Add(Card card){
-            Cards.Add(card);
-        }
+        public int Count{ get => Cards.Count; }
         
-        public void Discard(Card card){
-            Cards.Remove(card);
-        }
+        public void Add(Card card) => Cards.Add(card);
         
-        public Card PickRandom(){
-            return Cards[Ran.Next(0, Cards.Count)];
-        }
+        public void Remove(Card card) => Cards.Remove(card);
+        
+        public Card PickRandom() => Cards[Ran.Next(0, Cards.Count)];
+        
+        public Card Card(int index) => Cards[index];
+        
+        
+        
     }
 }
