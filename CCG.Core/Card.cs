@@ -9,10 +9,15 @@ namespace CCG.Core
     {
         public string Title;
         
+        public string Description;
+        
         public CardAttribute[] Attributes;
         
-        public Card(string title, CardAttribute[] attributes){
+        public Card(string title,
+                    string description, 
+                    CardAttribute[] attributes){
             Title = title;
+            Description = description;
             Attributes = attributes;
         }
     }
