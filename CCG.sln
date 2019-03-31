@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCG", "CCG\CCG.csproj", "{BFE2AEC6-A365-4016-99EF-2CE8123D6D93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCG.Core", "CCG.Core\CCG.Core.csproj", "{33fd4669-2ba4-4ca8-b6c3-f6250fd49ff3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFE2AEC6-A365-4016-99EF-2CE8123D6D93}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{BFE2AEC6-A365-4016-99EF-2CE8123D6D93}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{BFE2AEC6-A365-4016-99EF-2CE8123D6D93}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{BFE2AEC6-A365-4016-99EF-2CE8123D6D93}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+EndGlobal
