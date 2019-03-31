@@ -9,9 +9,17 @@ namespace CCG.Core
     {
         protected uint Count = 0;
         
+        public readonly string Name;
+        
         public uint Value{ get => Count; }
         
-        public Counter(uint initialValue = 0){
+        public Counter(string name, uint initialValue = 0){
+            if(string.IsNullOrEmpty(name))
+                throw new ArgumentException("Counter name cannot be null or empty");
+               
+            
+            Name = name;
+            
             Count = initialValue;
         }
         
