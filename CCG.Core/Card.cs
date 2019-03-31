@@ -11,11 +11,11 @@ namespace CCG.Core
         
 
         
-        public string Title;
+        public readonly string Title;
         
-        public string Description;
+        public readonly string Description;
         
-        public CardAttribute[] Attributes;
+        public readonly CardAttribute[] Attributes;
         
         public Card(string title,
                     CardAttribute[] attributes,

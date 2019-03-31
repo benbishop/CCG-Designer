@@ -8,9 +8,9 @@ namespace CCG.Core
         
         public const string NoUnits = "";   
         
-        public string Name;
-        public int Value;
-        public string Units;
+        public readonly string Name;
+        public readonly int Value;
+        public readonly string Units;
         
         public CardAttribute(string name, 
                              int value = NoValue,
