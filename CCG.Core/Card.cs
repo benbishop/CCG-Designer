@@ -7,6 +7,10 @@ namespace CCG.Core
 {
     public struct Card
     {
+        public const string NoDescription = "";
+        
+
+        
         public string Title;
         
         public string Description;
@@ -14,11 +18,16 @@ namespace CCG.Core
         public CardAttribute[] Attributes;
         
         public Card(string title,
-                    string description, 
-                    CardAttribute[] attributes){
+                    CardAttribute[] attributes,
+                    string description = NoDescription){
             Title = title;
             Description = description;
-            Attributes = attributes;
+            Attributes = attributes ?? new CardAttribute[0];
+           
+            
+            if(title == null)
+                throw new ArgumentNullException("Title cannot be null");                                
+                
         }
     }
 }
