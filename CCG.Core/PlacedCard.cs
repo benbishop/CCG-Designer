@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 
-namespace Library
+namespace CCG.Core
 {
     public class PlacedCard
     {
@@ -14,6 +14,18 @@ namespace Library
 	    
 	    public void TurnFaceDown() => faceUp = false;
 	    
+	    protected Dictionary<Guid, Counter> CounterMap = new Dictionary<Guid, Counter>();
 	    
+	    
+	    public Guid AddCounter(Counter counter){
+	        var id = Guid.NewGuid();
+	        CounterMap[id] = counter;
+	        return id;
+	       
+	    }
+	    
+	    public void RemoveCounter(Guid counterId){
+	        CounterMap.Remove(counterId);
+	    }
     }
 }
